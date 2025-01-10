@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SignSpeaker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>SignSpeaker</header>
+  <div class="container">
+    <div class="search-bar">
+      <input type="text" id="textInput" placeholder="Enter text or name to translate">
+      <select id="languageSelect">
+        <option value="en">English</option>
+        <option value="es">Spanish</option>
+        <option value="de">German</option>
+        <option value="ko">Korean</option>
+        <option value="ta">Tamil</option>
+        <option value="hi">Hindi</option>
+        <option value="it">Italian</option>
+        <option value="zh">Chinese</option>
+        <option value="ja">Japanese</option>
+      </select>
+      <button id="translateButton">Translate</button>
+    </div>
+    <div id="loading" style="display: none;">Loading...</div>
+    <div id="result" class="result-container"></div>
+    <div id="noResults" class="no-results" style="display: none;">No GIFs found for your search.</div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
